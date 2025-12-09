@@ -1,0 +1,51 @@
+{
+    "name": "Task",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "project_id": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "backlog",
+          "in_progress",
+          "in_review",
+          "done"
+        ],
+        "default": "backlog"
+      },
+      "priority": {
+        "type": "string",
+        "enum": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "default": "medium"
+      },
+      "due_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "assignee_email": {
+        "type": "string"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "project_id"
+    ]
+  }

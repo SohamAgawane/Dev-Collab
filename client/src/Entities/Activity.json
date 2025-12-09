@@ -1,0 +1,29 @@
+{
+    "name": "Activity",
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "project",
+          "task",
+          "doc",
+          "discussion",
+          "member"
+        ]
+      },
+      "project_id": {
+        "type": "string"
+      },
+      "entity_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "description",
+      "type"
+    ]
+  }

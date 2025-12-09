@@ -1,0 +1,27 @@
+{
+    "name": "Discussion",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "project_id": {
+        "type": "string"
+      },
+      "replies_count": {
+        "type": "number",
+        "default": 0
+      },
+      "is_resolved": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "required": [
+      "title",
+      "project_id"
+    ]
+  }

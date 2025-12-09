@@ -1,0 +1,30 @@
+{
+    "name": "DesignSpec",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "architecture",
+          "schema",
+          "api",
+          "diagram"
+        ],
+        "default": "architecture"
+      },
+      "content": {
+        "type": "object"
+      },
+      "project_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "type",
+      "project_id"
+    ]
+  }

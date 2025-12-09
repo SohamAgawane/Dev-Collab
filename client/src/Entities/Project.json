@@ -1,0 +1,38 @@
+{
+    "name": "Project",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "archived",
+          "on_hold"
+        ],
+        "default": "active"
+      },
+      "visibility": {
+        "type": "string",
+        "enum": [
+          "private",
+          "public"
+        ],
+        "default": "private"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "name"
+    ]
+  }

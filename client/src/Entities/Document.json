@@ -1,0 +1,23 @@
+{
+    "name": "Document",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "project_id": {
+        "type": "string"
+      },
+      "is_pinned": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "required": [
+      "title",
+      "project_id"
+    ]
+  }
